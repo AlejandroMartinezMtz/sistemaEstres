@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6fcf5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #4AD1B3;
+
+}
+
+
+.footer {
+  min-height: 8vh;
+  padding: 3px;
+  text-align: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  min-height: 100vh;
+  color: #fff;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.sidebar .nav-link {
+  color: #ffffff;
+}
+
+.sidebar i {
+  font-size: 28px;
+  padding-bottom: 1rem;
+}
+
+
+.text-white {
+  color: white;
+}
+
+
+.colorButton {
+  background-color: #68a7c2;
+  color: white;
+  font-weight: 600;
+}
+
+.icon-large {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.colorButton:hover {
+  background-color: #78cfbc;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    width: 250px;
+  }
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: #363949;
+  font-weight: bold;
+
+}
+
+.menuInicio {
+  font-size: 16px;
+  color: #f9f9fc;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  padding-top: 0.2rem;
+}
+
+.menuInicio:hover {
+  font-size: 19px;
+  color: #f9f9fc;
+  background-color: #6cd6bf;
+  border-radius: 7%;
+}
+
+.bx {
+  font-size: 2.0rem;
+  color: rgb(236, 248, 232);
+}
+
+.navbar-brand .admin-text {
+  font-size: 28px;
+  color: rgb(236, 248, 232);
+  font-weight: bold;
+}
+
+
+
+.container {
+  padding-bottom: 20px;
+
+}
+
+
+.container spand {
+  color: #0f7fca;
+}
+
+.container td {
+  font-size: 15px;
+}
+
+@media (max-width: 630px) {
+  .table {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #cde7e7;
+  min-height: 100vh;
+  color: #fff;
+  width: 240px;
+  transition: width 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar i {
+  color: #363949;
+  font-size: xx-large;
+}
+
+/* Color de los enlaces en estado normal */
+.sidebar .nav-link {
+  color: #363949;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Color del enlace activo */
+.sidebar .nav-link.active {
+  background-color: #B5DDD1;
+  color: #363949;
+}
+
+/* Cambiar el color del ícono dentro de los enlaces */
+.sidebar .nav-link i {
+  color: #363949;
+  margin-right: 10px;
+  font-size: xx-large;
+}
+
+/* Cambiar el color del ícono dentro de los enlaces */
+.sidebar .nav-link a {
+  color: #363949;
+  margin-right: 10px;
+}
+
+/* Cambiar el color del ícono al pasar el ratón por encima */
+.sidebar .nav-link:hover i {
+  color: #ffffff;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #3acfca;
+  border-radius: 50%;
+
+
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*Diseño de la vista principal del alumno*/
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5d74f7;
+}
+
+.card-body {
+  background-color: white;
+
+}
+
+.img-fluid {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para la tarjeta personalizada */
+.custom-card {
+  padding: 70px 60px;
+}
+
+.custom-img {
+  border-radius: 10px;
+}
+
+.custom-card-body {
+  flex: 2;
+  padding-left: 50px;
+  text-align: justify;
+}
+
+.custom-footer {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.card-img-left {
+  flex: 1;
+}
+
+
+
+/* Estilo para el contenedor de la imagen de la publicación */
+.imagen-publicacion {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para las imágenes */
+.imagen-publicacion img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilo para el texto justificado */
+.text-justificado {
+  text-align: justify;
+}
+
+.card-header {
+  background-color: #8fd1c3;
+}
+
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/*modo oscuro*/
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .sidebar {
+  background-color: #1f1f1f;
+  color: #cccccc;
+}
+
+body.dark-mode .table {
+  background-color: #1e1e1e;
+  color: #faf9f9;
+  border-color: #444444;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+  border-color: #444444;
+  background-color: #c2bdbd;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-custom-edit {
+  background-color: #b8ac0e;
+}
+
+body.dark-mode .btn-custom-delete {
+  background-color: #b23c45;
+}
+
+
+body.dark-mode .card{
+  background-color: #837f7f;
+  color: #494747;
+}
