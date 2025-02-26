@@ -1,5 +1,5 @@
 # sistemaEstres
-Desarrollo de un sistema web basado en Laravel para la evaluación del nivel de estrés en alumnos. El proyecto implementa una serie de cuestionarios y encuestas, donde los estudiantes responden a preguntas relacionadas con su bienestar emocional y académico.
+
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -11,6 +11,6 @@ Desarrollo de un sistema web basado en Laravel para la evaluación del nivel de 
 </p>
 
 ## About Laravel
-
+Desarrollo de un sistema web basado en Laravel para la evaluación del nivel de estrés en alumnos. El proyecto implementa una serie de cuestionarios y encuestas, donde los estudiantes responden a preguntas relacionadas con su bienestar emocional y académico.
 
 
