@@ -9,8 +9,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Inicio de sesión
-Inicio de sesión con recuperación de contraseña
+Inicio de sesión
 
 ![Inicio](imagenes/imagen1.PNG)
 
