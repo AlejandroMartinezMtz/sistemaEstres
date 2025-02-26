@@ -10,7 +10,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
-Desarrollo de un sistema web basado en Laravel para la evaluación del nivel de estrés en alumnos. El proyecto implementa una serie de cuestionarios y encuestas, donde los estudiantes responden a preguntas relacionadas con su bienestar emocional y académico.
+## Inicio de sesión
+Inicio de sesión con recuperación de contraseña
+
+![Inicio](imagenes/imagen1.PNG)
+
+Recuperación de contraseña con correo en tiempo real
+
+![Recuperacion_contrasenia](imagenes/imagen2.PNG)
+
+Formulario de evaluación de estrés
+
+![formulario_estres](imagenes/imagen3.PNG)
+
+
+Ejercicios para reducir el estrés
+
+![ejercicios_estres](imagenes/imagen4.PNG)
+
 
 
