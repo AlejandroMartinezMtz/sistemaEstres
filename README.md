@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # sistemaEstres
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
@@ -27,8 +25,4 @@ Formulario de evaluación de estrés
 
 Ejercicios para reducir el estrés
 
-![ejercicios_estres](imagenes/imagen4.PNG)
-
-
-
->>>>>>> fb42f4698a869d5c6d270747fb37d2f87bbd4d43
+![ejercicios_estres](imagenes/imagen4.png)
