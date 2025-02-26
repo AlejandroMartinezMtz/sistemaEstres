@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f3faf3;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  flex: 1;
+}
+
+.navbar {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #4AD1B3;
+  font-size: 0.9rem;
+}
+
+.container {
+  padding-top: 0%;
+}
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  min-height: 100vh;
+  color: #fff;
+  width: 240px;
+  transition: width 0.3s ease;
+}
+
+.sidebar .nav-link {
+  color: #ffffff;
+}
+
+.sidebar i {
+  font-size: 25px;
+  padding-bottom: 0.8rem;
+}
+
+
+.text-white {
+  color: white;
+}
+
+
+.colorButton {
+  background-color: #68a7c2;
+  color: white;
+  font-weight: 600;
+}
+
+.icon-large {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.colorButton:hover {
+  background-color: #8db0be;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    width: 240px;
+  }
+}
+
+
+.toggle-sidebar-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  display: none;
+}
+
+
+@media (max-width: 648px) {
+  .toggle-sidebar-btn {
+    display: inline-block;
+  }
+}
+
+
+
+.navbar-brand {
+  font-size: 28px;
+  color: #444550;
+  font-weight: bold;
+
+}
+
+.bx {
+  font-size: 2.0rem;
+  color: #f9f9fc;
+  ;
+}
+
+.navbar-brand .admin-text {
+  font-size: 27px;
+  color: #f9f9fc;
+  ;
+  font-weight: bold;
+}
+
+
+
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: auto;
+  max-width: 100%;
+}
+
+
+
+.table th,
+.table td {
+  text-align: justify;
+  font-size: 13px;
+}
+
+
+
+.tableEjercicio th:nth-child(10),
+.tableEjercicio td:nth-child(10) {
+  width: 9%;
+}
+
+.tableEjercicio th:nth-child(9),
+.tableEjercicio td:nth-child(9) {
+  width: 8%;
+}
+
+
+.tableEjercicio th:nth-child(12),
+.tableEjercicio td:nth-child(12) {
+  width: 25%;
+}
+
+
+.tablePasatiempo th:nth-child(10),
+.tablePasatiempo td:nth-child(10) {
+  width: 14%;
+}
+
+.tablePasatiempo th:nth-child(9),
+.tablePasatiempo td:nth-child(9) {
+  width: 14%;
+}
+
+
+.tableMateria th:nth-child(9),
+.tableMateria td:nth-child(9) {
+  width: 13%;
+}
+
+.tableMateria th:nth-child(8),
+.tableMateria td:nth-child(8) {
+  width: 14%;
+}
+
+.tableMateria th:nth-child(7),
+.tableMateria td:nth-child(7) {
+  width: 14%;
+}
+
+
+.tablePrograma th:nth-child(7),
+.tablePrograma td:nth-child(7) {
+  width: 14%;
+}
+
+.tablePrograma th:nth-child(9),
+.tablePrograma td:nth-child(9) {
+  width: 14%;
+}
+
+
+.tableAviso th:nth-child(9),
+.tableAviso td:nth-child(9) {
+  width: 14%;
+}
+
+.tableAviso th:nth-child(4),
+.tableAviso td:nth-child(4) {
+  width: 8%;
+}
+
+
+
+.tableUsuario th:nth-child(9),
+.tableUsuario td:nth-child(9) {
+  width: 13%;
+}
+
+
+
+.tableCuestionarios th:nth-child(8),
+.tableCuestionarios td:nth-child(8) {
+  width: 14%;
+}
+
+
+.tableEncuestas th:nth-child(6),
+.tableEncuestas td:nth-child(6) {
+  width: 14%;
+}
+
+
+.btn-custom-edit {
+  background-color: #ffc107;
+  color: #f8f6f6;
+  font-size: 0.6rem;
+  padding: 5px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-custom-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-custom-delete {
+  background-color: #dc3545;
+  color: #f8f6f6;
+  font-size: 0.6rem;
+  padding: 5px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-custom-delete:hover {
+  background-color: #c82333;
+}
+
+
+.btn-custom-verCuestionario {
+  background-color: #788bf8;
+  color: #f8f6f6;
+  font-size: 0.7rem;
+  padding: 5px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-custom-verCuestionario:hover {
+  background-color: #4555e4;
+  transform: translateY(-2px);
+}
+
+
+.btn-custom-verAlumnos {
+  background-color: #2845e7;
+  color: #f8f6f6;
+  font-size: 0.7rem;
+  padding: 5px 9px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-custom-verAlumnos:hover {
+  background-color: #6a78f3;
+  transform: translateY(2px);
+}
+
+
+.btn-custom-asignar {
+  background-color: #2845e7;
+  color: #f8f6f6;
+  font-size: 0.7rem;
+  padding: 5px 9px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-custom-asignar:hover {
+  background-color: #6a78f3;
+  transform: translateY(2px);
+}
+
+
+#alumnoSelect {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+
+@media (max-width: 630px) {
+  .table {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #cde7e7;
+  min-height: 100vh;
+  color: #fff;
+  width: 215px;
+  transition: width 0.3s ease;
+  position: relative;
+  z-index: 100;
+}
+
+
+.sidebar.active {
+  width: 240px;
+}
+
+.sidebar i {
+  color: #363949;
+  font-size: xx-large;
+}
+
+.sidebar .nav-link {
+  color: #474955;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar .nav-link:hover {
+  color: #87cfb9;
+}
+
+.sidebar .nav-link.active {
+  background-color: #B5DDD1;
+  color: #363949;
+}
+
+.sidebar .nav-link i {
+  color: #363949;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+
+.sidebar .nav-link a {
+  color: #363949;
+  margin-right: 10px;
+}
+
+.sidebar .nav-link:hover i {
+  color: #87cfb9;
+}
+
+
+/* Botón de menú para pantallas pequeñas */
+.toggle-sidebar-btn {
+  position: fixed;
+  top: 15px;
+  left: 4px;
+  z-index: 1100;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .toggle-sidebar-btn {
+    display: inline-block;
+  }
+
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 100;
+  }
+
+  .sidebar.active {
+    width: 240px;
+    z-index: 100;
+  }
+
+  /* Para que el contenido no se cubra completamente cuando el sidebar esté activo */
+  .content {
+    position: relative;
+    transition: opacity 0.3s ease;
+    margin-top: 70px;
+  }
+
+  /* Cuando el sidebar esté visible */
+  .sidebar.active~.content {
+    opacity: 0.4;
+  }
+}
+
+
+
+.card-img-top {
+  max-width: 50%;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.card {
+  box-shadow: 0 2px 10px rgb(181, 221, 209);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.progra {
+  padding-top: 1.8rem;
+}
+
+.pad {
+  padding-left: 1.8rem;
+}
+
+.respaldo {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 10px rgb(181, 221, 209);
+  border: none;
+
+}
+
+.respaldo:hover {
+  transform: translateY(-2px);
+}
+
+.contenidoGrafica h6 {
+  font-size: 13px;
+}
+
+#downloadPdfModal:hover {
+  transform: translateY(-2px);
+  ;
+}
+
+#resumenCuestionariosChart {
+  width: 100% !important;
+  max-width: 600px;
+  min-width: 100px;
+  height: 1px;
+}
+
+
+
+.chart-size {
+  max-width: 240px;
+  max-height: 240px;
+  margin: 0 auto;
+}
+
+.pie-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chart-area {
+  flex: 1;
+  max-width: 240px;
+}
+
+.chart-legend {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.publicaciones-container {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+
+/*Foro profesor/admin*/
+.menuInicio{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.menuInicio a{
+  font-size: 1rem;
+  color: white;
+}
+.menuInicio:hover{
+  transform: translateY(2px);
+}
+
+
+/*modo oscuro*/
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+body.dark-mode .nav-link i.fas.fa-bell {
+  color: #f5f4f4;
+}
+
+body.dark-mode .nav-link i.fas.fa-bell:hover {
+  color: #ffcc00;
+  transform: translateY(2px);;
+}
+
+
+body.dark-mode .menuInicio a:hover{
+  color: #ffcc00;
+  transform: translateY(2px);;
+}
+
+
+body.dark-mode .sidebar {
+  background-color: #1f1f1f;
+  color: #f5f4f4;
+}
+
+body.dark-mode .sidebar i{
+  color: #f5f4f4;
+}
+
+body.dark-mode .sidebar a{
+  color: #f5f4f4;
+}
+
+
+body.dark-mode .table {
+  background-color: #1e1e1e;
+  color: #faf9f9;
+  border-color: #444444;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+  border-color: #444444;
+  background-color: #c2bdbd;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-custom-edit {
+  background-color: #b8ac0e;
+}
+
+body.dark-mode .btn-custom-delete {
+  background-color: #b23c45;
+}
+
+
+body.dark-mode .card{
+  background-color: #837f7f;
+  color: #ffffff;
+}
